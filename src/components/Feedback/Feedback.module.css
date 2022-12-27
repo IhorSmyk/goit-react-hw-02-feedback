@@ -1,6 +1,6 @@
 .form {
   background-color: #ddc3a5;
-  width: 550px;
+  width: 430px;
   margin-left: auto;
   margin-top: 55px;
   margin-right: auto;
@@ -14,16 +14,15 @@
   box-shadow: 2px 3px 7px #201e20;
 }
 
-.message {
+/* .message {
   text-align: center;
-}
+} */
 
 .btnList {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-    width: 120px;
-
+  width: 120px;
 }
 
 .btn {
@@ -32,13 +31,12 @@
   border: transparent;
   border-radius: 2px;
   box-shadow: 1px 1px 2px;
-  transition: transform 250ms ease-out ;
+  transition: transform 250ms ease-out;
 }
 
-
 .btn:hover,
-.btn:focus{
-transform: translate(15px);
+.btn:focus {
+  transform: translate(13px);
 }
 
 .btnGood {
@@ -56,3 +54,10 @@ transform: translate(15px);
   background-color: #201e20;
   color: #ddc3a5;
 }
+
+ /* .item{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  column-gap: 30px;
+ } */
