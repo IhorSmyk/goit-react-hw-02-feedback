@@ -1,0 +1,54 @@
+.form {
+  background-color: #ddc3a5;
+  width: 550px;
+  margin-left: auto;
+  margin-top: 55px;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 4px;
+
+  font-weight: 300;
+  font-size: 33px;
+  letter-spacing: 0.02em;
+
+  box-shadow: 2px 3px 7px #201e20;
+}
+
+.message {
+  text-align: center;
+}
+
+.btnList {
+  /* width: 90px;
+    height: 30px; */
+  /* border: transparent;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 90px;
+  height: 30px;
+  border: transparent;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px;
+}
+
+.btnGood {
+  composes: btn;
+  background-color: #ddc3a5;
+}
+
+.btnNeutral {
+  composes: btn;
+  background-color: #e0a96d;
+}
+
+.btnBad {
+  composes: btn;
+  background-color: #201e20;
+  color: #ddc3a5;
+}
