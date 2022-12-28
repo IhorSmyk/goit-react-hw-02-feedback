@@ -1,55 +1,50 @@
 import { Component } from 'react';
 import c from './Feedback.module.css';
-import { PropTypes } from 'prop-types';
 
 export class Feedback extends Component {
   state = {
-    good: this.props.defaultValueGood || 0,
-    neutral: this.props.defaultValueNeutral || 0,
-    bad: this.props.defaultValueBad || 0,
+    good:  0,
+    neutral:  0, 
+    bad: 0, 
   };
 
-
-  handleGoodFeedbackIncrement = e => {
-    // let good = this.state.good;
-    this.setState({ good: 1 });
-    // console.log(e);
+  handleButtonClick = e => {
+    this.setState(prev => ({
+      [e.target.name]: prev[e.target.name] + 1,
+    }));
   };
-
-  handleNeutralFeedbackIncrement = () => {};
-
-  handleBadFeedbackIncrement = () => {};
 
   render() {
-    console.log("state->", this.state.good);
-    console.log("good->", this.good);
     return (
       <form className={c.form} action="submit">
         <p className={c.message}>Please leave feedback</p>
         <ul className={c.btnList}>
-          <li className={c.item}> 
+          <li className={c.item}>
             <button
+              name="good"
               className={c.btnGood}
               type="button"
-              onClick={this.handleGoodFeedbackIncrement}
+              onClick={this.handleButtonClick}
             >
               Good
             </button>
           </li>
           <li className={c.item}>
             <button
+              name="neutral"
               className={c.btnNeutral}
               type="button"
-              onClick={this.handleNeutralFeedbackIncrement}
+              onClick={this.handleButtonClick}
             >
               Neutral
             </button>
           </li>
           <li className={c.item}>
             <button
+              name="bad"
               className={c.btnBad}
               type="button"
-              onClick={this.handleBadFeedbackIncrement}
+              onClick={this.handleButtonClick}
             >
               Bad
             </button>
@@ -59,5 +54,3 @@ export class Feedback extends Component {
     );
   }
 }
-
-Feedback.propTypes = {};
