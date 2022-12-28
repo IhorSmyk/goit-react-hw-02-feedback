@@ -1,0 +1,8 @@
+.feedBack {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats {
+  display: flex;
+}

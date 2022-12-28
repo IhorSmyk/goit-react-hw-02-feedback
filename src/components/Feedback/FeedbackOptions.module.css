@@ -1,4 +1,4 @@
-.form {
+/* .form {
   background-color: #ddc3a5;
   width: 430px;
   margin-left: auto;
@@ -12,11 +12,11 @@
   letter-spacing: 0.02em;
 
   box-shadow: 2px 3px 7px #201e20;
-}
-
-/* .message {
-  text-align: center;
 } */
+
+.form{
+  width: 100%;
+}
 
 .btnList {
   margin-top: 20px;

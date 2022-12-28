@@ -1,0 +1,16 @@
+.section {
+  background-color: #ddc3a5;
+  width: 430px;
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 3px 7px #201e20;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 33px;
+  letter-spacing: 0.02em;
+}
