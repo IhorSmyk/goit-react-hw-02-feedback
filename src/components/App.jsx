@@ -1,6 +1,8 @@
 import { Component } from 'react';
 import Section from './Section/Section';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
+import Notification from './Notification/Notification';
+import Statistics from './Statistics/Statistics';
 
 class App extends Component {
   state = {
@@ -30,6 +32,11 @@ class App extends Component {
             options={Object.keys(this.state)}
             onLeaveFeedback={this.handleButtonClick}
           />
+        </Section>
+        <Section title={'Statistics:'}>
+          {/* {Math.max(...this.state) === 0 ? <Notification /> : <p></p>} */}
+          <Notification message={'There is no feedback'} />
+          {/* <Statistics good={ } neutral={ } bad={ } total={ } positive={ }/> */}
         </Section>
       </>
     );

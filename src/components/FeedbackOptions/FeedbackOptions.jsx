@@ -1,18 +1,15 @@
-// import Section from 'components/Section/Section';
-// import { Component } from 'react';
 import PropTypes from 'prop-types';
 import s from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-
   return (
     <form className={s.form} action="submit">
       <ul className={s.btnList}>
         {options.map(btn => {
           return (
-            <li className={s.item}>
+            <li key={btn} className={s.item}>
               <button
-                type='button'
+                type="button"
                 name={btn}
                 className={s[btn]}
                 onClick={onLeaveFeedback}
