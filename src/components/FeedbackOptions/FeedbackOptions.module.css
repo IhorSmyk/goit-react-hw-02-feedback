@@ -39,17 +39,17 @@
   transform: translate(13px);
 }
 
-.btnGood {
+.good {
   composes: btn;
   background-color: #ddc3a5;
 }
 
-.btnNeutral {
+.neutral {
   composes: btn;
   background-color: #e0a96d;
 }
 
-.btnBad {
+.bad {
   composes: btn;
   background-color: #201e20;
   color: #ddc3a5;

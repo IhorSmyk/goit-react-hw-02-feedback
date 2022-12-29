@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import Section from './Section/Section';
-import FeedbackOptions from './Feedback/FeedbackOptions';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 
 class App extends Component {
   state = {
@@ -15,18 +15,23 @@ class App extends Component {
     }));
   };
 
-  render() {
-    return
-    (
-      <div>
-        <Section title={"Please leave feedback"}>
-          <FeedbackOptions options={} onLeaveFeedback={}/>
-</Section>
-        <Section title={"Statistics:"}>
-          
-   </Section>
-      </div>
+  countTotalFeedback() {
+    
+  }
 
+  countPositiveFeedbackPercentage(){
+    
+}
+  render() {
+    return (
+      <>
+        <Section title={'Please leave feedback'}>
+          <FeedbackOptions
+            options={Object.keys(this.state)}
+            onLeaveFeedback={this.handleButtonClick}
+          />
+        </Section>
+      </>
     );
   }
 }
