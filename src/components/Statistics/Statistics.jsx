@@ -21,7 +21,7 @@ const Statistics = ({ good, neutral, bad, total, positive }) => {
       </ul>
       <ul className={s.stats}>
         <li>{total}</li>
-        <li>{positive}</li>
+        <li>{positive + '%'}</li>
       </ul>
     </div>
   );
