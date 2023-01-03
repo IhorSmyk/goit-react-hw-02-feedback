@@ -26,15 +26,15 @@ class App extends Component {
   render() {
     return (
       <>
-        <Section title={'please leave feedback'}>
+        <Section title='please leave feedback'>
           <FeedbackOptions
             options={Object.keys(this.state)}
             onLeaveFeedback={this.handleButtonClick}
           />
         </Section>
-        <Section title={'statistics'}>
+        <Section title='statistics'>
           {this.countTotalFeedback() === 0 ? (
-            <Notification message={'there is no feedback'} />
+            <Notification message='there is no feedback' />
           ) : (
             <Statistics
               good={this.state.good}
